@@ -1,0 +1,2 @@
+FMIL: module = Model, log level = 2: [logStatusError][FMU status:Error] fmi2SetupExperiment: Illegal co-simulation call sequence. fmi2SetupExperiment is not allowed in model_state_cs_step_complete state.
+FMIL: module = Model, log level = 2: [logStatusError][FMU status:Error] fmi2Terminate: Illegal co-simulation call sequence. fmi2Terminate is not allowed in model_state_error state.

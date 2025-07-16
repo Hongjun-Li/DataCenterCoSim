@@ -1,0 +1,24 @@
+Program Version,EnergyPlus, Version 9.0.1-bb7ca4f0da, YMD=2025.07.08 13:47
+1,5,Environment Title[],Latitude[deg],Longitude[deg],Time Zone[],Elevation[m]
+2,8,Day of Simulation[],Month[],Day of Month[],DST Indicator[1=yes 0=no],Hour[],StartMinute[],EndMinute[],DayType
+3,5,Cumulative Day of Simulation[],Month[],Day of Month[],DST Indicator[1=yes 0=no],DayType  ! When Daily Report Variables Requested
+4,2,Cumulative Days of Simulation[],Month[]  ! When Monthly Report Variables Requested
+5,1,Cumulative Days of Simulation[] ! When Run Period Report Variables Requested
+6,1,Calendar Year of Simulation[] ! When Annual Report Variables Requested
+136,1,EMS,PUE [] !Hourly
+224,1,MAIN ZONE,Zone Air Temperature [C] !Hourly
+263,1,PLENUM-1,Zone Air Temperature [C] !Hourly
+302,1,SUP-PLENUM-1,Zone Air Temperature [C] !Hourly
+341,1,SUP-PLENUM-2,Zone Air Temperature [C] !Hourly
+380,1,SUB ZONE,Zone Air Temperature [C] !Hourly
+614,1,SYSTEM AVAILABILITY SCHEDULE,Schedule Value [] !Hourly
+615,1,ZONE CONTROL TYPE SCHED,Schedule Value [] !Hourly
+616,1,HEATING SETPOINT SCHEDULE,Schedule Value [] !Hourly
+617,1,SUPPLY AIR SETPOINT SCHEDULE,Schedule Value [] !Hourly
+618,1,COOLING RETURN AIR SETPOINT SCHEDULE,Schedule Value [] !Hourly
+619,1,DATA CENTER CPU LOADING SCHEDULE,Schedule Value [] !Hourly
+620,1,ALWAYS_ON,Schedule Value [] !Hourly
+621,1,DATA CENTER OPERATION SCHEDULE,Schedule Value [] !Hourly
+622,1,DAT_RESET,Schedule Value [] !Hourly
+623,1,AFFMU,Schedule Value [] !Hourly
+624,1,SUPPLY INLET NODE,System Node Relative Humidity [%] !Hourly

@@ -1,0 +1,73 @@
+Program Version,EnergyPlus, Version 9.0.1-bb7ca4f0da, YMD=2025.07.08 13:47,
+   ** Warning ** CheckEnvironmentSpecifications: SimulationControl specified doing design day simulations, but no design environments specified.
+   **   ~~~   ** ...No design environment results produced. For these results, add appropriate SizingPeriod:* objects for your simulation.
+   ** Warning ** GetVertices: Roof/Ceiling is upside down! Tilt angle=[180.0], should be near 0, Surface="F1-1S", in Zone="SUP-PLENUM-1".
+   **   ~~~   ** Automatic fix is attempted.
+   ** Warning ** GetVertices: Roof/Ceiling is upside down! Tilt angle=[180.0], should be near 0, Surface="TOP-1", in Zone="PLENUM-1".
+   **   ~~~   ** Automatic fix is attempted.
+   ** Warning ** GetVertices: Roof/Ceiling is upside down! Tilt angle=[180.0], should be near 0, Surface="ZN002:ROOF001", in Zone="SUB ZONE".
+   **   ~~~   ** Automatic fix is attempted.
+   ** Warning ** GetVertices: Roof/Ceiling is upside down! Tilt angle=[180.0], should be near 0, Surface="F2-1S", in Zone="SUP-PLENUM-2".
+   **   ~~~   ** Automatic fix is attempted.
+   ** Warning ** GetSurfaceData: InterZone Surface Areas do not match as expected and might not satisfy conservation of energy:
+   **   ~~~   **   Area=232.2 in Surface=ZN001:ROOF001, Zone=MAIN ZONE
+   **   ~~~   **   Area=491.3 in Surface=C1-1P, Zone=PLENUM-1
+   ** Warning ** GetSurfaceData: InterZone Surface Areas do not match as expected and might not satisfy conservation of energy:
+   **   ~~~   **   Area=491.3 in Surface=C2-1P, Zone=PLENUM-1
+   **   ~~~   **   Area=259.0 in Surface=ZN002:ROOF001, Zone=SUB ZONE
+   ** Warning ** CalcSurfaceCentroid: 8 Surfaces have the Z coordinate < 0.
+   **   ~~~   ** ...in any calculations, Wind Speed will be 0.0 for these surfaces.
+   **   ~~~   ** ...in any calculations, Outside temperatures will be the outside temperature + 9.750E-003 for these surfaces.
+   **   ~~~   ** ...that is, these surfaces will have conditions as though at ground level.
+   ** Warning ** CalculateZoneVolume: The Zone="PLENUM-1" is not fully enclosed. To be fully enclosed, each edge of a surface must also be an edge on one other surface.
+   **   ~~~   **   The zone volume was calculated using the floor area times ceiling height method where the floor is horizontal, the walls are vertical, and the wall heights are all the same.
+   **   ~~~   **   The surface    "WALL-1PF" has an edge that is either not an edge on another surface or is an edge on three or more surfaces: 
+   **   ~~~   **     Vertex start { 32.2400, 0.0000, 4.5720}
+   **   ~~~   **     Vertex end   { 0.0000, 0.0000, 4.5720}
+   **   ~~~   **   The surface    "WALL-1PR" has an edge that is either not an edge on another surface or is an edge on three or more surfaces: 
+   **   ~~~   **     Vertex start { 32.2400, 15.2400, 4.5720}
+   **   ~~~   **     Vertex end   { 32.2400, 0.0000, 4.5720}
+   **   ~~~   **   The surface    "WALL-1PB" has an edge that is either not an edge on another surface or is an edge on three or more surfaces: 
+   **   ~~~   **     Vertex start { 0.0000, 15.2400, 4.5720}
+   **   ~~~   **     Vertex end   { 32.2400, 15.2400, 4.5720}
+   **   ~~~   **   The surface    "WALL-1PL" has an edge that is either not an edge on another surface or is an edge on three or more surfaces: 
+   **   ~~~   **     Vertex start { 0.0000, 0.0000, 4.5720}
+   **   ~~~   **     Vertex end   { 0.0000, 15.2400, 4.5720}
+   ************* Note that the following warning(s) may/will occur if you have not enclosed your zone completely.
+   ** Warning ** Entered Volume entered for Zone="PLENUM-1" significantly different from calculated Volume
+   **   ~~~   ** Entered Zone Volume value=245.67, Calculated Zone Volume value=491.34, entered volume will be used in calculations.
+   ************* SizeHVACSingleDuct: Potential issue with equipment sizing for AirTerminal:SingleDuct:VAV:NoReheat = "MAIN ZONE VAV AIR".
+   **   ~~~   ** User-Specified Minimum Cooling Air Flow Fraction of 5.00000E-002 [m3/s]
+   **   ~~~   ** differs from Design Size Minimum Cooling Air Flow Fraction of 0.20000 [m3/s]
+   **   ~~~   ** This may, or may not, indicate mismatched component sizes.
+   **   ~~~   ** Verify that the value entered is intended and is consistent with other components.
+   ************* SizeHVACSingleDuct: Potential issue with equipment sizing for AirTerminal:SingleDuct:VAV:NoReheat = "SUB ZONE VAV AIR".
+   **   ~~~   ** User-Specified Minimum Cooling Air Flow Fraction of 5.00000E-002 [m3/s]
+   **   ~~~   ** differs from Design Size Minimum Cooling Air Flow Fraction of 0.20000 [m3/s]
+   **   ~~~   ** This may, or may not, indicate mismatched component sizes.
+   **   ~~~   ** Verify that the value entered is intended and is consistent with other components.
+   ************* Testing Individual Branch Integrity
+   ************* All Branches passed integrity testing
+   ************* Testing Individual Supply Air Path Integrity
+   ************* All Supply Air Paths passed integrity testing
+   ************* Testing Individual Return Air Path Integrity
+   ************* All Return Air Paths passed integrity testing
+   ************* No node connection errors were found.
+   ************* Beginning Simulation
+   ** Severe  ** ExternalInterface: Did not find file "socket.cfg".
+   **   ~~~   ** This file needs to be in same directory as in.idf.
+   **   ~~~   ** Check the documentation for the ExternalInterface.
+   **  Fatal  ** Error in ExternalInterface: Check EnergyPlus *.err file.
+   ...Summary of Errors that led to program termination:
+   ..... Reference severe error count=1
+   ..... Last severe error=ExternalInterface: Did not find file "socket.cfg".
+   *************
+   ************* ===== Final Error Summary =====
+   ************* The following error categories occurred.  Consider correcting or noting.
+   ************* InterZone Surface Areas -- mismatch
+   ************* ..Area mismatch errors happen when the interzone surface in zone A is
+   ************* ..not the same size as it's companion in zone B.
+   *************
+   ************* EnergyPlus Warmup Error Summary. During Warmup: 0 Warning; 1 Severe Errors.
+   ************* EnergyPlus Sizing Error Summary. During Sizing: 0 Warning; 0 Severe Errors.
+   ************* EnergyPlus Terminated--Fatal Error Detected. 10 Warning; 1 Severe Errors; Elapsed Time=00hr 00min  0.40sec
